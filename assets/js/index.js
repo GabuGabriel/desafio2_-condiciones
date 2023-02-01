@@ -3,7 +3,7 @@ borde.onclick = function bordeImagen() {
 
     imgaen1 = document.querySelector('#imagenclick');
     if (imgaen1.style.border == "") {
-        imgaen1.style.border = "1px solid black";
+        imgaen1.style.border = "4px solid black";
     } else {
         imgaen1.style.border = "";
     }
@@ -50,13 +50,13 @@ function verificarpassword() {
     const resultadopassword = document.querySelector('#resultadocontraseña')
 
     if (num1 == 9 && num2 == 1 && num3 == 1) {
-        resultadopassword.innerHTML = 'Primer codigo correcto';
+        resultadopassword.innerHTML = 'Primera contraseña correcta';
     }
     else if (num1 == 7 && num2 == 1 && num3 == 4) {
-        resultadopassword.innerHTML = 'Segundo codigo correcto';
+        resultadopassword.innerHTML = 'Segunda contraseña correcta';
     }
     else {
-        resultadopassword.innerHTML = 'Codigo incorrecto';
+        resultadopassword.innerHTML = 'Contraseña incorrecta';
     }
 }
 
