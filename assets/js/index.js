@@ -1,12 +1,13 @@
 borde = document.querySelector("#imagenclick")
 borde.onclick = function bordeImagen() {
 
-    imgaen1 = document.querySelector('#imagenclick');
-    if (imgaen1.style.border == "") {
-        imgaen1.style.border = "4px solid black";
+    clickimagen = document.querySelector('#imagenclick');
+    if (clickimagen.style.border == "") {
+        clickimagen.style.border = "4px solid black";
     } else {
-        imgaen1.style.border = "";
+        clickimagen.style.border = "";
     }
+
 }
 
 /* parte 2 */
@@ -27,7 +28,7 @@ verify.addEventListener("click", function verificar() {
         resultado.innerHTML = "Solo valores entre 1 y 10"
 
     } else if (total > 10) {
-        resultado.innerHTML = "Excede el maximo"
+        resultado.innerHTML = `Excede el maximo. Llevas ${total} stickers`
 
     } else if (total > 0) {
         resultado.innerHTML = `Llevas ${total} stickers`
